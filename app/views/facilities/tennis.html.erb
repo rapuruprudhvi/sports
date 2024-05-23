@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Tennis Facilities</h1>
+
+  <ul>
+    <% @tennis_facilities.each do |facility| %>
+      <li>
+        <strong>Name:</strong> <%= facility.name %><br>
+        <strong>Description:</strong> <%= facility.description %><br>
+        <strong>Location:</strong> <%= facility.location %><br>
+        <strong>Pincode:</strong> <%= facility.pincode %><br>
+        <!-- Add other details as needed -->
+      </li>
+    <% end %>
+  </ul>
+</div>
